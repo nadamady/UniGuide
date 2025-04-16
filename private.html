@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Universities in Egypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="UniGuide Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="pages/private.html" class="active"> Private</a>
+            <a href="National.html">National</a>
+            <a href="State-Funded.html">State-Funded</a>
+        </div>
+    </nav>
+    <div class="main-container">
+        <!-- aou -->
+
+        <div class="university-container" data-city="Cairo" data-type="Private" data-faculties="Faculty of Business Studies, Faculty of Computer Studies, Faculty of Language Studies, Faculty of Media and Mass Communication, Graphic and Multimedia Design Technology, Faculty of Education">
+            <img src="https://www.aou.edu.eg/assets/aou/images/sub-menu/centers.jpg" alt="Arab Open University" class="university-image">
+            <div class="university-content" >
+                <h2>Arab Open University (AOU)</h2>
+                <p>Arab Open University (AOU) is a non-profit university system in the Arab world. Headquartered in Kuwait, the system is composed of 16 campuses across 9 countries: Ardiya in Kuwait, Riyadh, Jeddah, Dammam, Madinah, Ḥail, Al-Ahsa in Saudi Arabia,
+                     Seeb in Oman, A'ali in Bahrain, Amman in Jordan, Al-Bireh in Palestine, Beirut, Antelias, Tripoli in Lebanon, El-Shorouk in Egypt and Khartoum in Sudan.</p>
+                     
+                     <div class="aou-credit-system">
+                        <h3><span>AOU</span> follows the credit hour system.</h3>
+                        <ul>
+                          <li>Tuition fees are calculated based on the total number of credit hours for which you are registered, in addition to the cost of the course books.</li>
+                          <li>They offer group discount</li>
+                          <li>Cost Per Credit Hour is <span class="price">2005</span> LE.</li>
+                          <li>Administrative Fees Per Semester is <span class="price bold">2500</span> LE.</li>
+                        </ul>
+                      </div>
+                      
+                     <section class="price-checker">
+                        <h2>Arab Open University Tuition Fees</h2>
+                        <p>Application Fees Is 1200 EGP​, Paid once - non Refundable</p>
+                        <label for="faculties-select">Select a Faculty:</label>
+                        <select id="faculties-select" onchange="showPrice()">
+                            <option value="">-- Choose a faculty --</option>
+                            <option value="bus">Faculty of Business Studies</option>
+                            <option value="cs">Faculty of Computer Studies</option>
+                            <option value="lang"> Faculty of Language Studies</option>
+                            <option value="media"> Faculty of Media and Mass Communication</option>
+                            <option value="graphic">Graphic and Multimedia Design Technology</option>
+                            <option value="edu"> Faculty of Education</option>
+                            
+                        </select>
+                    
+                        <div id="price-result" style="margin-top: 15px; font-weight: bold;"></div>
+                    </section>
+                    
+                    <script>
+                        function showPrice() {
+                            const faculity = document.getElementById('faculties-select').value;
+                            const priceDisplay = document.getElementById('price-result');
+                    
+                            
+                            const prices = {
+                                bus: "EGP 50,000 - 55,000 per year",
+                                cs: "EGP 50,000 - 55,000 per year",
+                                lang: "EGP 50,000 - 55,000 per year",
+                                media:"EGP 55,000 - 60,000 per year",
+                                graphic: "EGP 55,000 - 60,000 per year",
+                                edu: "EGP 50,000 - 55,000 per year"
+                            };
+                    
+                            if (prices[faculity]) {
+                                priceDisplay.textContent = `Tuition Fee: ${prices[faculity]}`;
+                            } else {
+                                priceDisplay.textContent = "";
+                            }
+                        }
+                    </script>
+                    
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/CtFXJgwTKJAzd6TF6" target="_blank">View Location</a>
+                    <a href="https://www.aou.edu.eg/Pages/default.aspx" target="_blank">Visit Website</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- heliopolis -->
+        
+        <div class="university-container" data-city="Cairo" data-type="Private" data-faculties="Faculty of Management, Faculty of Business, Faculty of Economics,Faculty of ArtDesign, Faculty of Sciences">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjctbgYdwWTrSdlL6-4Qp3LeId_fQotvUS8frPXzSKUKAX0m3zcWVA6yylF3aCVOa9mU&usqp=CAU" alt="Heliopolis University" class="university-image">
+            <div class="university-content">
+                <h2>Heliopolis University (HU)</h2>
+                <p>Heliopolis University is a non-profit university in Egypt with the mission of sustainable development. In Fall 2018, 
+                    Heliopolis University had around 1,700 students in five faculties</p>
+                    <section class="price-checker">
+                        <h2>Heliopolis University Tuition Fees</h2>
+             
+                    
+                        <label for="heliopolis-faculties-select">Select a Faculty:</label>
+                        <select id="heliopolis-faculties-select" onchange="showHeliopolisPrice()">
+                            <option value="">-- Choose a faculty --</option>
+                            <option value="Management">Management</option>
+                            <option value="business">Business & Administration</option>
+                            <option value="Economics">Economics</option>
+                            <option value="ArtDesign">Art & Design</option>
+                            <option value="Sciences">Faculty of Sciences</option>
+                        </select>
+                    
+                        <div id="heliopolis-price-result" style="margin-top: 15px; font-weight: bold;"></div>
+                    </section>
+
+                    <title>FAQ Section</title>
+                    <div class="faq-section">
+                        <div class="accordion-item" onclick="toggleAccordion(this)">
+                          <div class="accordion">Registration system <span class="chevron">⌄</span></div>
+                          <div class="content">
+                            <ul>
+                                <li>The student pays the fees – whether for the current semester or the entire academic year at the bank or online using the student’s name and university number.</li>
+                                <li>The amount will be credited to the student’s account either through the Interbank service or by sending a copy of the payment receipt to finance@hu.edu.eg via email.</li>
+                                <li>In the event that tuition fees are paid at the university, a collection fee of 2% will be charged based on the payment amount.</li>
+                              </ul>
+                          </div>
+                        </div>
+                    
+                        <div class="accordion-item" onclick="toggleAccordion(this)">
+                          <div class="accordion">Payment after the due date <span class="chevron">⌄</span></div>
+                          <div class="content">
+                            <li>The dates and deadlines for tuition payment will be announced in due course.</li>
+                            <li> If the deadline is surpassed and the registration period is exceeded, registration will only be possible with the dean of the faculty’s approval, accompanied by an academic penalty of 1,000 pounds.</li>
+                          </div>
+                        </div>
+                    
+                        <div class="accordion-item" onclick="toggleAccordion(this)">
+                          <div class="accordion">Addition & omission <span class="chevron">⌄</span></div>
+                          <div class="content">
+                            <li>If extra credit hours are included post final registration approval, the university treasury will retain the funds until full payment is received.</li>
+                        <li>If an item is excluded from the additional hours, its value will be added to the student’s account as credit and cannot be refunded in cash.</li>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <script>
+                        function toggleAccordion(element) {
+                          element.classList.toggle('active');
+                        }
+                      </script>
+                    <script>
+                        function showHeliopolisPrice() {
+                            const faculty = document.getElementById('heliopolis-faculties-select').value;
+                            const priceDisplay = document.getElementById('heliopolis-price-result');
+                    
+                            const prices = {
+                                Management: "Tuition Fees:	$13,312- Enrollment Fee: $300 per year",
+                                business: "Tuition Fees:  $13,312 - Enrollment Fee:	$300 per year",
+                                Economics: "Tuition Fees:  $13,312 - Enrollment Fee: $300 per year",
+                                ArtDesign: "Tuition Fees:  $13,312 - Enrollment Fee: $300 per year",
+                                Sciences: "Tuition Fees:  $13,312 - Enrollment Fee: $300 per year"
+                            };
+                    
+                            if (prices[faculty]) {
+                                priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                            } else {
+                                priceDisplay.textContent = "";
+                            }
+                        }
+                    </script>
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/sKCJSCnFUbJ6Z4AV7" target="_blank">View Location</a>
+                    <a href="https://hu.edu.eg/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GIU -->
+
+            <div class="university-container" data-city="New Administrative Capital" data-type="Private" data-faculties="Faculty of Business Administration, Faculty of Informatics and Computer Science, Faculty of Engineering, Faculty of Business Informatics, Faculty of Pharmaceutical Engineering, Faculty of Architectural Engineering, Faculty of Biotechnology, Faculty of Design">
+                <img src="https://www2.daad.de/medien/DAAD-aktuell/fittosize__624_351_298339f0fec1a4f94527d7bb204d87e0_giu_gebaeudemodell_1000x563.jpg" alt="German International University" class="university-image">
+                
+                <div class="university-content">
+                    <h2>German International University (GIU)</h2>
+                    <p>
+                        The German International University (GIU) is a prominent educational institution located in Egypt's New Administrative Capital.
+                        Established through a cooperation agreement between Germany and Egypt, GIU offers German-accredited Bachelor's,
+                        Master's, and PhD degrees across various disciplines.
+                    </p>
+                    <div class="german-advantage">
+                        <h3> International Advantage</h3>
+                        <ul>
+                          <li>Degrees are <strong>German-accredited</strong>.</li>
+                          <li>Some programs offer the chance to <strong>study in Germany</strong> for a semester or more.</li>
+                          <li>Strong focus on <strong>practical learning</strong> and internships.</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="extra-costs">
+                        <h3> Extra Costs</h3> 
+                        <ul>
+                          <li>Application fees: Around 1,000–2,000 EGP.</li>
+                          <li>Transportation & bus fees (if needed): ~6,000–9,000 EGP/year.</li>
+                          <li>Books & materials: Varies by course.</li>
+                          <li>Optional German language courses may have separate fees (though many programs are in English).</li>
+                        </ul>
+                      </div>
+                      
+        
+                    <section class="price-checker">
+                        <h2>The German International University Tuition Fees</h2>
+              
+        
+                        <label for="faculties-select-giu">Select a Faculty:</label>
+                        <select id="faculties-select-giu" onchange="showPriceGIU()">
+                            <option value="">-- Choose a faculty --</option>
+                            <option value="bus">Business Administration</option>
+                            <option value="cs">Informatics and Computer Science</option>
+                            <option value="eng">Faculty of Engineering</option>
+                            <option value="busi">Business Informatics</option>
+                            <option value="pha">Pharmaceutical Engineering</option>
+                            <option value="art">Architectural Engineering</option>
+                            <option value="bio">Faculty of Biotechnology</option>
+                            <option value="des">Faculty of Design</option>
+                        </select>
+        
+                        <div id="price-result-giu" style="margin-top: 15px; font-weight: bold;"></div>
+                    </section>
+        
+                    <script>
+                        function showPriceGIU() {
+                            const faculty = document.getElementById('faculties-select-giu').value;
+                            const priceDisplay = document.getElementById('price-result-giu');
+        
+                            const prices = {
+                                bus: "EGP 240,630 - 264,000 per year",
+                                cs: "EGP 240,630 - 264,000 per year",
+                                eng: "EGP 240,630 - 264,000 per year",
+                                busi: "EGP 240,630 - 264,000 per year",
+                                pha: "EGP 240,630 - 264,000 per year",
+                                art: "EGP 240,630 - 264,000 per year",
+                                bio: "EGP 215,000 - 253,000 per year",
+                                des: "EGP 237,190 per year"
+                            };
+        
+                            if (prices[faculty]) {
+                                priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                            } else {
+                                priceDisplay.textContent = "";
+                            }
+                        }
+                    </script>
+        
+                    <div class="buttons">
+                        <a href="https://maps.app.goo.gl/zCGdqu83pvUFvzKR8" target="_blank">View Location</a>
+                        <a href="https://giu-uni.de/" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- GUC -->
+      
+        <div class="university-container" data-city="Cairo" data-type="Private" data-faculties="Faculty of Engineering, Faculty of Management Technology, Faculty of Pharmacy and Biotechnology, Faculty of Law and Legal Studies, Faculty of Applied Sciences and Arts">
+            <img src="https://www.guc.edu.eg//img/content/about_guc/48.jpg" alt="German University in Cairo" class="university-image">
+            <div class="university-content">
+                <h2>German University in Cairo (GUC)</h2>
+                <p>GUC offers more than 70 study programs leading to the degrees of B.Sc., M.Sc. and Ph.D. according to the Bologna Process. The language of instruction is English. 
+                    The study programs are designed according to German standards and are accredited in Egypt and Germany (by ACQUIN).</p>
+
+                    <div class="admission-reqs">
+                        <h3>📝 Admission Requirements</h3>
+                        <ul>
+                          <li>High school certificate (Thanaweya Amma, IGCSE, American Diploma, IB, etc.)</li>
+                          <li>English proficiency (TOEFL or IELTS may be required)</li>
+                          <li>Some faculties may require math/science entrance tests</li>
+                          <li>Apply online via their website page below</li>
+                        </ul>
+                      </div>                      
+
+                    <section class="price-checker">
+                        <h2>German University in Cairo (GUC) Tuition Fees</h2>
+                        
+                    
+                        <label for="guc-faculties-select">Select a Faculty:</label>
+                        <select id="guc-faculties-select" onchange="showGUCPrice()">
+                            <option value="">-- Choose a faculty --</option>
+                            <option value="engineering">Faculty of Engineering </option>
+                            <option value="management">Faculty of Management Technology</option>
+                            <option value="pharmacy">Faculty of Pharmacy and Biotechnology</option>
+                            <option value="law">Faculty of Law and Legal Studies</option>
+                            <option value="arts">Faculty of Applied Sciences and Arts</option>
+                        </select>
+                    
+                        <div id="guc-price-result" style="margin-top: 15px; font-weight: bold; "></div>
+                    </section>
+                    
+                    <script>
+                        function showGUCPrice() {
+                            const faculty = document.getElementById('guc-faculties-select').value;
+                            const priceDisplay = document.getElementById('guc-price-result');
+                    
+                            const prices = {
+                                engineering: "EGP EGP 160,000 - 190,000 Per Semester",
+                                pharmacy: "EGP 180,000 - 200,000 Per Semester ",
+                                management: "EGP 150,000 - 170,000 Per Semester",
+                                law: "EGP 140,000 - 190,000 Per Semester",
+                                arts: "EGP 170,000 - 190,000 Per Semester"
+                            };
+                    
+                            if (prices[faculty]) {
+                                priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                            } else {
+                                priceDisplay.textContent = "";
+                            }
+                        }
+                    </script>
+                    
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/sKCJSCnFUbJ6Z4AV7" target="_blank">View Location</a>
+                    <a href="https://giu-uni.de//" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUE -->
+        
+        <div class="university-container"  data-city="Cairo" data-type="Private" data-faculties="Faculty of Engineering, Faculty of Informatics & Computer Science, Faculty of Dentistry, Faculty of Law, Faculty of Business Administration, Faculty of Pharmacy, Faculty of Mass Communication, Faculty of Nursing, Faculty of Energy and Environmental Engineering">
+            <img src="https://theigclub.com/wp-content/uploads/elementor/thumbs/MDY_2211-ps8svd9abf37i9kki2728dv1ao0g57ntq0ck980jw8.jpg" 
+                 alt="British University in Egypt" class="university-image">
+        
+            <div class="university-content">
+                <h2>British University in Egypt (BUE)</h2>
+                <p>The British University in Egypt is a private Egyptian university in El Shorouk City, Cairo. 
+                   Founded in 2005 through an inter-governmental agreement, it offers a British-style education 
+                   with degrees validated by UK partner universities and the Egyptian Supreme Council of Universities.</p>
+
+
+                   <div class="bue-section">
+                    <h3> International Advantage </h3>
+                    <ul>
+                      <li>British-style education without leaving Egypt</li>
+                      <li>Dual degree (UK + Egypt)</li>
+                      <li>Strong <strong>student life, clubs, and events</strong></li>
+                      <li>Comfortable, spacious campus in El Sherouk</li>
+                      <li>Lots of exchange programs and international exposure</li>
+                    </ul>
+                  </div>
+                  
+        
+                <section class="price-checker">
+                    <h2>BUE Tuition Fees</h2>
+                
+                    <label for="faculties-select-bue">Select a Faculty:</label>
+                    <select id="faculties-select-bue" onchange="showPriceBUE()">
+                        <option value="">-- Choose a faculty --</option>
+                        <option value="eng">Faculty of Engineering</option>
+                        <option value="cs">Faculty of Informatics & Computer Science</option>
+                        <option value="dentistry">Faculty of Dentistry</option>
+                        <option value="law">Faculty of Law</option>
+                        <option value="business">Faculty of Business Administration</option>
+                        <option value="pharmacy">Faculty of Pharmacy</option>
+                        <option value="mass">Faculty of Mass Communication</option>
+                        <option value="nursing">Faculty of Nursing</option>
+                        <option value="energy">Faculty of Energy and Environmental Engineering</option>
+                    </select>
+        
+                    <div id="price-result-bue" style="margin-top: 15px; font-weight: bold;"></div>
+                </section>
+        
+                <script>
+                    function showPriceBUE() {
+                        const faculty = document.getElementById('faculties-select-bue').value;
+                        const priceDisplay = document.getElementById('price-result-bue');
+        
+                        const prices = {
+                            eng: "EGP 130,000 – 160,000 per year",
+                            cs: "EGP 130,000 – 150,000 per year",
+                            dentistry: "EGP 210,000 – 230,000 per year",
+                            law: "EGP 115,000 – 125,000 per year",
+                            business: "EGP 120,000 – 135,000 per year",
+                            pharmacy: "EGP 180,000 – 200,000 per year",
+                            mass: "EGP 110,000 – 125,000 per year",
+                            nursing: "EGP 100,000 – 120,000 per year",
+                            energy: "EGP 130,000 – 150,000 per year"
+                        };
+        
+                        if (prices[faculty]) {
+                            priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                        } else {
+                            priceDisplay.textContent = "";
+                        }
+                    }
+                </script>
+                <div class="page-content">
+                    <button onclick="togglePolicy()">View Refund Policy</button>
+                
+                    <div class="refund-policy" id="policySection">
+                      <h1>Refund Policy</h1>
+                      <p>
+                        As per the Council of Private and National Universities (CPNU) Decree on the 14th of February 2023. 
+                        Refund Steps: In case of a refund request, the paid amount will be received through a bank cheque 
+                        or bank transfer within fifteen working days after the refund is requested. 
+                        <strong>*Bank cheques or bank transfers are only issued in the name of the applicant’s legal guardian (father/mother).</strong>
+                      </p>
+                
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Date/Item</th>
+                            <th>Terms & Conditions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Application fees</td>
+                            <td>Non-refundable</td>
+                          </tr>
+                          <tr>
+                            <td>Before the 1st day of the Academic Year</td>
+                            <td>Deduction of 10% of the paid downpayment</td>
+                          </tr>
+                          <tr>
+                            <td>Till the end of the 1st month of the Academic Year</td>
+                            <td>Deduction 50% of the 1st installment</td>
+                          </tr>
+                          <tr>
+                            <td>After the end of 1st month of the Academic Year</td>
+                            <td>Deduction of 100% of the 1st installment</td>
+                          </tr>
+                          <tr>
+                            <td>Before 21st of December 2024</td>
+                            <td>Deduction of the 1st installment + 50% of the 2nd installment</td>
+                          </tr>
+                          <tr>
+                            <td>1st of January 2025 and till 28th February 2025</td>
+                            <td>No refund is allowed for the 1st & 2nd installment</td>
+                          </tr>
+                          <tr>
+                            <td>1st of March 2025</td>
+                            <td>No refund is allowed for the total annual tuition fee</td>
+                          </tr>
+                          <tr>
+                            <td>Applicants who joined Military and Police colleges</td>
+                            <td>Deduction of 50% of the paid amount (Provided proof of enrollment)</td>
+                          </tr>
+                          <tr>
+                            <td>Accommodation & Transportation fees</td>
+                            <td>Deduction of 10% of the paid amount till 2nd teaching week (no refund after 2nd teaching week)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                  <script>
+                    function togglePolicy() {
+                      var section = document.getElementById("policySection");
+                      if (section.style.display === "none" || section.style.display === "") {
+                        section.style.display = "block";
+                      } else {
+                        section.style.display = "none";
+                      }
+                    }
+                  </script>
+
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/x6ocp6thgfSuhean6" target="_blank">View Location</a>
+                    <a href="https://www.bue.edu.eg/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACU -->
+        
+    <div class="university-container"  data-city="6th of October City" data-type="Private" data-faculties="Faculty of Dental Medicine, Faculty of Pharmacy, Faculty of Physical Therapy, Faculty of Engineering, Faculty of Computer Science, Faculty of Design & Creative Arts, Faculty of Design & Creative Arts , Faculty of Mass Communication, Faculty of Languages & Translation, Faculty of Business Administration">
+        <img src="https://acu.edu.eg/Media/News/2022/7/19/2022-637938295531845640-184.jpeg" alt="Ahram Canadian University" class="university-image">
+        <div class="university-content">
+            <h2>Ahram Canadian University (ACU)</h2>
+            <p>Al-Ahram Canadian University (ACU) is a private non-profit university in 6th of October City, Egypt. 
+                It was established by the Al-Ahram newspaper in 2005. In addition to its various faculties, the university runs specialized
+                 centers.</p>
+   
+            <div class="university-content">    
+              <section class="price-checker">
+                    <h2>Ahram Canadian University Tuition Fees </h2>
+                        <label for="faculties-select-acu">Select a Faculty:</label>
+                            <select id="faculties-select-acu" onchange="showPriceACU()">
+                                <option value="">-- Choose a faculty --</option>
+                                <option value="dentistry">Faculty of Oral & Dental Medicine</option>
+                                <option value="pharmacy">Faculty of Pharmacy</option>
+                                <option value="pt">Faculty of Physical Therapy</option>
+                                <option value="engineering">Faculty of Engineering</option>
+                                <option value="cs">Faculty of Computer Science</option>
+                                <option value="designScience">Faculty of Design & Creative Arts (Science)</option>
+                                <option value="designAcademic">Faculty of Design & Creative Arts (Academic)</option>
+                                <option value="media">Faculty of Mass Communication</option>
+                                <option value="languages">Faculty of Languages & Translation</option>
+                                <option value="business">Faculty of Business Administration</option>
+                            </select>
+                
+                            <div id="price-result-acu" style="margin-top: 15px; font-weight: bold;"></div>
+                        </section>
+                
+                        <script>
+                            function showPriceACU() {
+                                const faculty = document.getElementById('faculties-select-acu').value;
+                                const priceDisplay = document.getElementById('price-result-acu');
+                
+                                const prices = {
+                                    dentistry: "130,000 EGP per year",
+                                    pharmacy: "95,000 EGP per year (Clinical Pharmacy: 98,000 EGP)",
+                                    pt: "70,000 EGP per year",
+                                    engineering: "55,000 EGP per year",
+                                    cs: "48,000 EGP per year",
+                                    designScience: "55,000 EGP per year",
+                                    designAcademic: "55,000 EGP per year",
+                                    media: "English Section: 45,000 EGP / Arabic Section: 40,000 EGP",
+                                    languages: "40,000 EGP per year",
+                                    business: "45,000 EGP per year"
+                                };
+                
+                                if (prices[faculty]) {
+                                    priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                                } else {
+                                    priceDisplay.textContent = "";
+                                }
+                            }
+                        </script>
+    
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/besD5HX7Ni9iAacs8" target="_blank">View Location</a>
+                    <a href="https://acu.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AUC -->
+    
+    <div class="university-container" data-city="New Cairo" data-type="Private" data-faculties="Faculty of Business, Faculty of Global Affairs and Public Policy, Faculty of Humanities and Social Sciences, Faculty of Sciences and Engineering">
+        <img src="https://egyptianstreets.com/wp-content/uploads/2017/12/123-1.jpg" alt="American University in Cairo" class="university-image">
+        <div class="university-content">
+            <h2>American University in Cairo (AUC)</h2>
+            <p>The American University in Cairo (AUC) is a private research university in New Cairo, Egypt.
+                 The university offers American-style learning programs at undergraduate, graduate, 
+                and professional levels, along with a continuing education program.</p>
+
+                <div class="auc-faculties-section">
+                    <h2>The American University in Cairo (AUC)</h2>
+                    <p><b>This university offers the following 4 faculties:</b></p>
+                    <ul class="auc-faculty-list">
+                      <li>Business</li>
+                      <li>Global Affairs and Public Policy</li>
+                      <li>Humanities and Social Sciences</li>
+                      <li>Sciences and Engineering</li>
+                    </ul>
+                  </div>
+
+                <div class="cost-container">
+                    <h2 class="cost-heading">American University in Cairo Estimated Annual Costs</h2>
+                    <button class="toggle-button" onclick="toggleCostTable()">Show Tuition Fees</button>
+                
+                    <table class="cost-table" id="costTable">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>US Students</th>
+                          <th>US–Egyptian Dual Nationality Students</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="cost-category">Tuition (12 credits per semester)</td>
+                          <td>$17,640</td>
+                          <td>$16,008</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Fees</td>
+                          <td>$420</td>
+                          <td>$200</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Books and Supplies</td>
+                          <td>$1,200</td>
+                          <td>$1,200</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Room on-campus (single)</td>
+                          <td>$2,920</td>
+                          <td>$2,920</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Board</td>
+                          <td>$4,000</td>
+                          <td>$4,000</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Personal</td>
+                          <td>$2,000</td>
+                          <td>$2,000</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Airfare (roundtrip)</td>
+                          <td>$2,800</td>
+                          <td>$2,800</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">AUC Bus Pass</td>
+                          <td>$410</td>
+                          <td>$410</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Travel within Egypt</td>
+                          <td>$3,000</td>
+                          <td>$3,000</td>
+                        </tr>
+                        <tr>
+                          <td class="cost-category">Loan Origination Fees</td>
+                          <td>$132</td>
+                          <td>$132</td>
+                        </tr>
+                        <tr>
+                            <td class="cost-category">Total Budget</td>
+                            <td>$34,522</td>
+                            <td>$32,670</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                
+                  <script>
+                    function toggleCostTable() {
+                      const table = document.getElementById('costTable');
+                      const button = document.querySelector('.toggle-button');
+                
+                      if (table.style.display === 'none' || table.style.display === '') {
+                        table.style.display = 'table';
+                        button.textContent = 'Hide Tuition Fees';
+                      } else {
+                        table.style.display = 'none';
+                        button.textContent = 'Show Tuition Fees';
+                      }
+                    }
+                  </script>
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/Cu4mZW6obuMwiH6v8" target="_blank">View Location</a>
+                    <a href="https://www.aucegypt.edu/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    <!-- ARAB ACADEMY -->
+
+    <div class="university-container"  data-city="Alexandria, Cairo" data-type="Private" data-faculties="Faculty of Engineering, Faculty of Business Administration, Faculty of Computing and Information Technology, Faculty of Logistics and Supply Chain Management, Faculty of Maritime Transport and Technology">
+        <img src="https://media.licdn.com/dms/image/v2/C4D1BAQEmSuw_qSaO3g/company-background_10000/company-background_10000/0/1603554985679/arab_academy_for_science_and_technology_and_maritime_transport_cover?e=2147483647&v=beta&t=OU3rPYsQQmZ2kZfi9CIwkCwugLAbxrHzDazOZg1Kzeo" alt="Arab Academy for Science, Technology and Maritime Transport" class="university-image">
+        <div class="university-content">
+            <h2>Arab Academy for Science, Technology and Maritime Transport</h2>
+            <p>The Arab Academy for Science, Technology & Maritime Transport (AASTMT) or (AAST) is a regional university operated by the Arab League, which runs programs in marine transportation, business, and engineering.
+                 AASTMT started as a notion in the Arab League Transport Committee's meetings on 11 March 1970.
+                The academy's inception was in 1972 in the city of Alexandria, Egypt. Later on, it expanded into Cairo.</p>
+             
+                <section class="price-checker">
+                    <h2>AASTMT Tuition Fees</h2>
+                
+                    <label for="faculties-select-aastmt">Select a Faculty:</label>
+                    <select id="faculties-select-aastmt" onchange="showPriceAASTMT()">
+                        <option value="">-- Choose a faculty --</option>
+                        <option value="engineering">Faculty of Engineering</option>
+                        <option value="business">Faculty of Business Administration</option>
+                        <option value="computing">Faculty of Computing and Information Technology</option>
+                        <option value="logistics">Faculty of Logistics and Supply Chain Management</option>
+                        <option value="maritime">Faculty of Maritime Transport and Technology</option>
+                    </select>
+                
+                    <div id="price-result-aastmt" style="margin-top: 15px; font-weight: bold;"></div>
+                </section>
+                
+                <script>
+                    function showPriceAASTMT() {
+                        const faculty = document.getElementById('faculties-select-aastmt').value;
+                        const priceDisplay = document.getElementById('price-result-aastmt');
+                
+                        const prices = {
+                            engineering: "EGP 60,000 per year",
+                            business: "EGP 50,000 per year",
+                            computing: "EGP 55,000 per year",
+                            logistics: "EGP 50,000 per year",
+                            maritime: "Please contact the university for details"
+                        };
+                
+                        if (prices[faculty]) {
+                            priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                        } else {
+                            priceDisplay.textContent = "";
+                        }
+                    }
+                </script>
+                  
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/r9HuJStZqWcSJ52y5" target="_blank">View Location</a>
+                <a href="https://aast.edu/en/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CIC -->
+    <div class="university-container" data-city="Cairo, El Sheikh Zayed" data-type="Private" data-faculties="Faculty of Engineering, Faculty of Business Administration, Faculty of Mass Communication, Faculty of Computer Science">
+        <img src="https://www.cic-cairo.edu.eg/wp-content/uploads/2021/04/01-Featured-Image-CIC-New-Cairo-e1619884831536.jpg" alt="Canadian International College (CIC)" class="university-image">
+        <div class="university-content">
+            <h2>Canadian International College (CIC)</h2>
+            <p>The Canadian International College (CIC), is an Egyptian University in Cairo, Egypt. 
+                The CIC is the sole provider of Canadian higher education in Egypt. CIC is the Cairo campus for Cape Breton University. 
+                It has two campuses, the main campus is
+                located in the residential area of El Tagamoa El Khames in New Cairo city and the other campus is located in El Sheikh Zayed.</p>
+                
+                <div class="cic-programs">
+                    <h3>CIC offers two main programs:</h3>
+                    <ul class="program-list">
+                      <li><strong>Egyptian Track</strong> (local degree)</li>
+                      <li><strong>Canadian Track</strong> (dual degree from CIC & Cape Breton University - CBU)</li>
+                    </ul>
+                  
+                    <h4>Fees can vary depending on:</h4>
+                    <ul class="fee-conditions">
+                      <li>Track (Egyptian or Canadian)</li>
+                      <li>Faculty (Engineering, Business, Mass Comm., Computer Science, etc.)</li>
+                      <li>Whether you go for the <strong>Canada Pathway</strong> (studying part in Canada)</li>
+                    </ul>
+                  </div>
+                               
+                <button onclick="toggleCIC()">Show CIC Tuition Fees</button>
+                <section id="cic-section" style="display: none;">
+                    <div class="cic-card">
+                      <div class="cic-info">
+                        <div class="cic-tuition-box">
+                          <h3>Tuition Fees of the Canadian International College (CIC)</h3>
+                          <p>The tuition fees of CIC differ between the New Cairo branch and the Sheikh Zayed branch, and they also vary from one academic year to another.</p>
+                          <ul>
+                            <li><strong>New Cairo Branch</strong></li>
+                            <ul>
+                              <li>Engineering (Egyptian): EGP 18,633 / semester</li>
+                              <li>Engineering (Dual): EGP 18,633 + 12,000 / semester</li>
+                              <li>Business/IT (Egyptian): EGP 16,120 / semester</li>
+                              <li>Business/IT (Dual): EGP 16,120 + 12,000 / semester</li>
+                              <li>Mass Communication (Egyptian): EGP 14,312 / semester</li>
+                              <li>Mass Communication (Dual): EGP 14,312 + 12,000 / semester</li>
+                              <li>Computer Science: EGP 10,287 / semester</li>
+                            </ul>
+                  
+                            <li><strong>Sheikh Zayed Branch</strong></li>
+                            <ul>
+                              <li>Engineering (Egyptian): EGP 16,490 / semester</li>
+                              <li>Engineering (Dual): EGP 16,490 + 12,000 / semester</li>
+                              <li>Business/IT (Egyptian): EGP 8,750 / semester</li>
+                              <li>Business/IT (Dual): EGP 8,750 + 12,000 / semester</li>
+                            </ul>
+                          </ul>
+                          <p class="cic-note">Note: Additional admin fees apply (training, insurance, events, app, etc.). Final costs are decided by CIC’s accounting office.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <script>
+                      function toggleCIC() {
+                        const section = document.getElementById('cic-section');
+                        const button = document.getElementById('toggleBtn');
+                  
+                        if (section.style.display === 'none') {
+                          section.style.display = 'block';
+                          button.textContent = 'Hide CIC Tuition Fees';
+                        } else {
+                          section.style.display = 'none';
+                          button.textContent = 'Show CIC Tuition Fees';
+                        }
+                      }
+                    </script>  
+            <div class="buttons">
+                <a href="https://g.co/kgs/E58E6ai" target="_blank">View Location, Sheikh Zayed</a>
+                <a href="https://g.co/kgs/vF5fdHp" target="_blank">View Location, New Cairo</a>
+                    <a href="https://uofcanada.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+     <!-- DUST -->
+    <div class="university-container" data-city="Mansoura" data-type="Private" data-faculties="Faculty of Engineering, Faculty of Computer Science, Faculty of Pharmacy, Faculty of Physical Therapy, Faculty of Business Administration">
+        <img src="https://new.deltauniv.edu.eg/Uploads/cd71a11b-7797-4d49-a7db-6d0de1d490d3_59.jpg" alt="Delta University for Science and Technology (DUST)" class="university-image">
+        <div class="university-content">
+            <h2>Delta University for Science and Technology (DUST)</h2>
+            <p>Delta University for Science and Technology in Mansoura is one of the entities of Delta Group, established by presidential decree No. 147 for the year 2007 as the first private university in the Egyptian Delta and Lower Egypt. It is a
+                 University that operates according to the highest national and international accreditation standards and includes many faculties.</p>
+            
+                 <section class="price-checker">
+                    <h2>DUST Tuition Fees</h2>
+                
+                    <label for="faculties-select-dust">Select a Faculty:</label>
+                    <select id="faculties-select-dust" onchange="showPriceDUST()">
+                        <option value="">-- Choose a faculty --</option>
+                        <option value="eng">Faculty of Engineering</option>
+                        <option value="cs">Faculty of Computer Science</option>
+                        <option value="pharmacy">Faculty of Pharmacy</option>
+                        <option value="therapy">Faculty of Physical Therapy</option>
+                        <option value="business">Faculty of Business Administration</option>
+                    </select>
+                
+                    <div id="price-result-dust" style="margin-top: 15px; font-weight: bold;"></div>
+                </section>
+                
+                <script>
+                    function showPriceDUST() {
+                        const faculty = document.getElementById('faculties-select-dust').value;
+                        const priceDisplay = document.getElementById('price-result-dust');
+                
+                        const prices = {
+                            eng: "$3,000 – $5,500 per year",
+                            cs: "$4,000 – $6,000 per year",
+                            pharmacy: "$4,500 – $7,000 per year",
+                            therapy: "$3,500 – $5,500 per year",
+                            business: "$3,500 – $6,000 per year"
+                        };
+                
+                        if (prices[faculty]) {
+                            priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                        } else {
+                            priceDisplay.textContent = "";
+                        }
+                    }
+                </script>
+                
+            
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/bR9V6KxsvEAvBtPm9" target="_blank">View Location</a>
+                <a href="https://new.deltauniv.edu.eg/en/home/index" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- ECU -->
+    
+    <div class="university-container" data-city="Cairo" data-type="Private" data-faculties="Faculty of Engineering and Technology, Faculty of Economics and International Trade, Faculty of Physiotherapy, Faculty of Pharmacy and Drug Technology">
+        <img src="https://ecu.edu.eg/wp-content/uploads/2024/04/nasercity-1024x683.jpg" alt="Egyptian Chinese University (ECU)" class="university-image">
+        <div class="university-content">
+            <h2>Egyptian Chinese University (ECU)</h2>
+            <p>The Egyptian Chinese University (ECU), established in 2013, is a private higher education institution located in Cairo, Egypt. 
+
+                 It is recognized by the Ministry of Higher Education of Egypt and offers a range of undergraduate programs across various faculties.</p>
+
+                <div class="ecu-faq-container" id="ecu-faq-section" >
+                    <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                    <ul class="ecu-faq-list">
+                      <li>
+                        <strong>The first installment</strong> is paid before the start of the first semester, covering <strong>60%</strong> of the year's fees.
+                      </li>
+                      <li>
+                        <strong>The second installment</strong> is paid before the start of the second semester, covering <strong>40%</strong> of the year's fees.
+                      </li>
+                    </ul>
+                  
+                    <h4 class="ecu-faq-note-heading">Note</h4>
+                    <p class="ecu-faq-note">
+                      Fees are paid for using laboratories, workshops, and clinics in the first semester, in addition to administrative and ministerial fees. These extra fees are <strong>only paid once</strong> in the first semester of the first year.
+                    </p>
+                </div>
+                  
+                 <button class="ecu-tuition-toggle-btn" onclick="toggleECUTuition()">Show Tuition Fees</button>
+                 <div class="ecu-tuition-container" id="ecu-tuition-section" style="display: none;">
+                    <h3 class="ecu-tuition-title">Tuition Fees by Faculty</h3>
+                    <table class="ecu-tuition-table">
+                      <thead>
+                        <tr>
+                          <th>Faculty</th>
+                          <th>Total Fees</th>
+                          <th>First Installment (labs/admin fees)</th>
+                          <th>Second Installment</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Engineering and Technology</td>
+                          <td>56,000</td>
+                          <td>33,600 + 4,000 + 1,120</td>
+                          <td>22,400</td>
+                        </tr>
+                        <tr>
+                          <td>Economics and International Trade</td>
+                          <td>44,000</td>
+                          <td>26,400 + 2,000 + 880</td>
+                          <td>17,600</td>
+                        </tr>
+                        <tr>
+                          <td>Physiotherapy</td>
+                          <td>78,000</td>
+                          <td>46,800 + 5,000 + 1,560</td>
+                          <td>31,200</td>
+                        </tr>
+                        <tr>
+                          <td>Pharmacy and Drug Technology</td>
+                          <td>98,000</td>
+                          <td>55,800 + 5,000 + 1,960</td>
+                          <td>39,200</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <script>
+                    function toggleECUTuition() {
+                      const section = document.getElementById('ecu-tuition-section');
+                      const button = document.querySelector('.ecu-tuition-toggle-btn');
+                  
+                      if (section.style.display === 'none' || section.style.display === '') {
+                        section.style.display = 'block';
+                        button.textContent = 'Hide Tuition Fees';
+                      } else {
+                        section.style.display = 'none';
+                        button.textContent = 'Show Tuition Fees';
+                      }
+                    }
+                  </script>
+
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/qHc1MY2w4L6X3ZuV7" target="_blank">View Location</a>
+                <a href="https://ecu.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- EELU -->
+    <div class="university-container" data-city="Cairo" data-type="Public" data-faculties="Faculty of Computers and Information Technology, Faculty of Business Administration, Faculty of Educational Studies">
+        <img src="https://moodlelms.eelu.edu.eg/pluginfile.php/1/theme_boost_union/slidebackgroundimage1/0/EELU_Building_For-Farouk%20%281%29.png" alt="Egyptian e-Learning University (EELU)" class="university-image">
+        <div class="university-content">
+            <h2>Egyptian e-Learning University (EELU)</h2>
+            <p>National Egyptian E-Learning University (EELU)  is a non-profit Egyptian National University, and the first Egyptian university to offer E-Learning services. EELU was established through Decree No. 233 by 
+                the President of the Arab Republic of Egypt on August 16th, 
+                2008 to provide distance education through 24-hour online learning. As at 2024, the director of the University is Dr. Ahmed Abu Al-Magd and the director of student affairs is Khaled Hashem. </p>
+                
+                <div class="elearning-faculties-section">
+                    <h2>Colleges & Faculties:</h2>
+                  
+                    <div class="elearning-faculty">
+                      <h3>Faculty of Computers and Information Technology:</h3>
+                      <p>Focus on computer science, information technology, and related fields.</p>
+                    </div>
+                  
+                    <div class="elearning-faculty">
+                      <h3>Faculty of Business Administration:</h3>
+                      <p>Programs in management, finance, and business-related disciplines.</p>
+                    </div>
+                  
+                    <div class="elearning-faculty">
+                      <h3>Faculty of Educational Studies:</h3>
+                      <p>Offers programs on instructional technology, educational sciences, and methods for utilizing e-learning in education.</p>
+                    </div>
+                  </div>
+                  
+                
+                
+                <div class="elearning-container">
+                    <button class="elearning-toggle-btn" onclick="toggleElearningTable()">Show Tuition Fees</button>
+                  
+                    <div class="elearning-table-wrapper" id="elearning-table-wrapper">
+                      <h2>Bachelor Course Programs at Egyptian e-Learning University</h2>
+                      <table class="elearning-table">
+                        <thead>
+                          <tr>
+                            <th>Course Program</th>
+                            <th>Duration</th>
+                            <th>Tuition Fees per Year (USD)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><strong>Bachelor of Computer Science</strong></td>
+                            <td>4 Years</td>
+                            <td>$2,500 - $3,000</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Bachelor of Information Technology</strong></td>
+                            <td>4 Years</td>
+                            <td>$2,500 - $3,000</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Bachelor of Business Administration (BBA)</strong></td>
+                            <td>4 Years</td>
+                            <td>$2,000 - $2,500</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Bachelor of Educational Technology</strong></td>
+                            <td>4 Years</td>
+                            <td>$2,000 - $2,500</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                  <script>
+                    function toggleElearningTable() {
+                      const section = document.getElementById('elearning-table-wrapper');
+                      const btn = document.querySelector('.elearning-toggle-btn');
+                  
+                      if (section.style.display === 'none' || section.style.display === '') {
+                        section.style.display = 'block';
+                        btn.textContent = 'Hide Tuition Fees';
+                      } else {
+                        section.style.display = 'none';
+                        btn.textContent = 'Show Tuition Fees';
+                      }
+                    }
+                  </script>         
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/hfL9VBKdmRdgWWeu6" target="_blank">View Location</a>
+                <a href="https://www.eelu.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+
+     <!-- ERU -->
+     <div class="university-container" data-city="Cairo" data-type="Private" data-faculties="Faculty of Pharmacy and Pharmaceutical Technology, Faculty of Physical Therapy, Faculty of Veterinary Medicine, Faculty of Engineering and Technology, Faculty of Computer Science and Information Systems, Faculty of Fine Arts and Design, Faculty of Economics and International Trade">
+      <img src="https://eru.edu.eg/wp-content/uploads/2024/05/DJI_0975-1.jpg" alt="Egyptian Russian University (ERU)" class="university-image">
+      <div class="university-content">
+          <h2>Egyptian Russian University (ERU)</h2>
+          <p>The Egyptian Russian University (ERU) is a private institution located in Badr City, Cairo Governorate, Egypt. Established in 2006, it was founded to promote collaboration between Egypt and Russia in higher education, research, and cultural exchange.</p>
+  
+          <div class="aou-credit-system">
+              <h3><span>ERU</span> follows the credit hour system.</h3>
+              <ul>
+                  <li>Tuition fees are calculated based on the total number of credit hours for which you are registered, in addition to the cost of the course books.</li>
+                  <li>They offer group discounts.</li>
+                  <li>Cost Per Credit Hour is <span class="price">EGP 1,200</span>.</li>
+                  <li>Administrative Fees Per Semester are <span class="price bold">EGP 3,000</span>.</li>
+              </ul>
+          </div>
+  
+          <section class="price-checker">
+              <h2>Egyptian Russian University Tuition Fees</h2>
+              <p>Application Fees are EGP 1,000, Paid once - non-refundable.</p>
+              <label for="faculties-select">Select a Faculty:</label>
+              <select id="faculties-select" onchange="showPrice()">
+                  <option value="">-- Choose a faculty --</option>
+                  <option value="pharmacy">Faculty of Pharmacy and Pharmaceutical Technology</option>
+                  <option value="physiotherapy">Faculty of Physical Therapy</option>
+                  <option value="veterinary">Faculty of Veterinary Medicine</option>
+                  <option value="engineering">Faculty of Engineering and Technology</option>
+                  <option value="cs">Faculty of Computer Science and Information Systems</option>
+                  <option value="finearts">Faculty of Fine Arts and Design</option>
+                  <option value="economics">Faculty of Economics and International Trade</option>
+              </select>
+  
+              <div id="price-result" style="margin-top: 15px; font-weight: bold;"></div>
+          </section>
+  
+          <script>
+              function showPrice() {
+                  const faculty = document.getElementById('faculties-select').value;
+                  const priceDisplay = document.getElementById('price-result');
+  
+                  const prices = {
+                      pharmacy: "EGP 98,000 per year",
+                      physiotherapy: "EGP 82,000 per year",
+                      veterinary: "EGP 68,000 per year",
+                      engineering: "EGP 58,000 per year",
+                      cs: "EGP 56,000 per year",
+                      finearts: "EGP 52,000 per year",
+                      economics: "EGP 48,000 per year"
+                  };
+  
+                  if (prices[faculty]) {
+                      priceDisplay.textContent = `Tuition Fee: ${prices[faculty]}`;
+                  } else {
+                      priceDisplay.textContent = "";
+                  }
+              }
+          </script>
+  
+          <div class="buttons">
+              <a href="https://maps.app.goo.gl/TPYDtTYEF2V61DyG9" target="_blank">View Location</a>
+              <a href="https://eru.edu.eg/" target="_blank">Visit Website</a>
+          </div>
+      </div>
+  </div>
+
+     <!-- FUE -->
+    <div class="university-container"  data-city="Cairo" data-type="Private" data-faculties="Faculty of Oral & Dental Medicine, Faculty of Pharmaceutical Sciences & Pharmaceutical Industries, Faculty of Engineering & Technology, Faculty of Economics & Political Science, Faculty of Commerce & Business Administration, Faculty of Computers & Information Technology">>
+        <img src="https://www.fue.edu.eg/ImageHandler.ashx?Id=4242&SS=06a21492a0bb3515776e4e748d866968" alt="Future University in Egypt (FUE)" class="university-image">
+        <div class="university-content">
+            <h2>Future University in Egypt (FUE)</h2>
+            <p>Future University in Egypt (FUE) is a private university established in 2006, located in the Fifth Settlement of New Cairo, Egypt.
+                 The university offers a range of undergraduate programs across six faculties.</p>
+
+                 <div class="fue-faq-container" id="fue-faq-section">
+                  <h3 class="fue-faq-title">Tuition Policy</h3>
+                  <ul class="fue-faq-list">
+                    <li>Tuition fees are annual fees divided into two installments and each should be paid before the beginning of each semester.
+
+                      Tuition fees for  Bachelor’s degree courses for non-Egyptian students are paid in US dollars.
+                      
+                      A student, who fails to make full payment for his or her balance by the final payment due date, will be prohibited from registering for classes until the balance is paid in full. </li>
+                    
+                  </ul>
+                  <h4 class="fue-faq-note-heading">Note</h4>
+                  <p class="fue-faq-note">
+                    Additional lab, workshop, and clinic fees are charged <strong>once</strong> in the first semester of the first year.
+                  </p>
+                </div>
+            
+                <button class="fue-tuition-toggle-btn" onclick="toggleFUETuition()">Show Tuition Fees</button>
+                <div class="fue-tuition-container" id="fue-tuition-section" style="display: none;">
+                  <h3 class="fue-tuition-title">Tuition Fees by Faculty</h3>
+                  <table class="fue-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Total Fees (EGP)</th>
+                        <th>First Installment<br>(60% + one‑time lab/workshop/clinic fees)</th>
+                        <th>Second Installment<br>(40%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Oral & Dental Medicine</td>
+                        <td>137,000</td>
+                        <td>82,200 + applicable lab/workshop fees</td>
+                        <td>54,800</td>
+                      </tr>
+                      <tr>
+                        <td>Pharmaceutical Sciences & Pharmaceutical Industries</td>
+                        <td>106,000</td>
+                        <td>63,600 + applicable lab/workshop fees</td>
+                        <td>42,400</td>
+                      </tr>
+                      <tr>
+                        <td>Engineering & Technology</td>
+                        <td>65,500</td>
+                        <td>39,300 + applicable lab/workshop fees</td>
+                        <td>26,200</td>
+                      </tr>
+                      <tr>
+                        <td>Economics & Political Science</td>
+                        <td>52,000</td>
+                        <td>31,200 + applicable lab/workshop fees</td>
+                        <td>20,800</td>
+                      </tr>
+                      <tr>
+                        <td>Commerce & Business Administration</td>
+                        <td>57,000</td>
+                        <td>34,200 + applicable lab/workshop fees</td>
+                        <td>22,800</td>
+                      </tr>
+                      <tr>
+                        <td>Computers & Information Technology</td>
+                        <td>57,000</td>
+                        <td>34,200 + applicable lab/workshop fees</td>
+                        <td>22,800</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            
+                <script>
+                  function toggleFUETuition() {
+                    const section = document.getElementById('fue-tuition-section');
+                    const button  = document.querySelector('.fue-tuition-toggle-btn');
+                    if (!section.style.display || section.style.display === 'none') {
+                      section.style.display = 'block';
+                      button.textContent   = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent   = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/3hCPq5uvR653s6YV6" target="_blank">View Location</a>
+                <a href="https://www.fue.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- MIU -->
+    
+     <div class="university-container" data-city="Qalyubiyya" data-type="Private" data-faculties="Faculty of Al-Alsun (Languages), Faculty of Business Administration and International Trade, Faculty of Computer Science, Faculty of Oral & Dental Medicine, Faculty of Engineering Sciences & Arts, Faculty of Mass Communication, Faculty of Pharmacy">
+      <img src="https://www.koleyat.com/wp-content/uploads/2017/11/MIU-1203x800.jpg" alt="Misr International University (MIU)" class="university-image">
+      <div class="university-content">
+        <h2>Misr International University (MIU)</h2>
+        <p>Misr International University (MIU), established in 1996, is a private research university located in Obour City, Qalyubiyya Governorate, Egypt. It offers a variety of undergraduate programs across multiple faculties, recognized by the Egyptian Ministry of Higher Education.</p>
+    
+        <div class="ecu-faq-container" id="miu-faq-section">
+          <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+          <ul class="ecu-faq-list">
+            <li><strong>Fees are paid per semester</strong>, typically in two installments: one at the beginning of each term.</li>
+            <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+          </ul>
+    
+          <h4 class="ecu-faq-note-heading">Note</h4>
+          <p class="ecu-faq-note">
+            Freshman students must pay 50% of the annual tuition fees along with the full administrative fee upon acceptance.
+          </p>
+        </div>
+    
+        <button class="ecu-tuition-toggle-btn" onclick="toggleMIUTuition()">Show Tuition Fees</button>
+        <div class="ecu-tuition-container" id="miu-tuition-section" style="display: none;">
+          <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+          <table class="ecu-tuition-table">
+            <thead>
+              <tr>
+                <th>Faculty</th>
+                <th>Total Fees</th>
+                <th>First Semester</th>
+                <th>Second Semester</th>
+                <th>Administrative Fees</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Al-Alsun (Languages)</td>
+                <td>75,000</td>
+                <td>37,500</td>
+                <td>37,500</td>
+                <td>11,000</td>
+              </tr>
+              <tr>
+                <td>Business Administration and International Trade</td>
+                <td>108,600</td>
+                <td>54,300</td>
+                <td>54,300</td>
+                <td>15,000</td>
+              </tr>
+              <tr>
+                <td>Computer Science</td>
+                <td>125,000</td>
+                <td>62,500</td>
+                <td>62,500</td>
+                <td>11,000</td>
+              </tr>
+              <tr>
+                <td>Oral & Dental Medicine</td>
+                <td>232,000</td>
+                <td>116,000</td>
+                <td>116,000</td>
+                <td>18,000</td>
+              </tr>
+              <tr>
+                <td>Engineering Sciences & Arts</td>
+                <td>109,000</td>
+                <td>54,500</td>
+                <td>54,500</td>
+                <td>12,000</td>
+              </tr>
+              <tr>
+                <td>Mass Communication</td>
+                <td>108,600</td>
+                <td>54,300</td>
+                <td>54,300</td>
+                <td>15,000</td>
+              </tr>
+              <tr>
+                <td>Pharmacy (Clinical/Pharm D)</td>
+                <td>121,300</td>
+                <td>60,650</td>
+                <td>60,650</td>
+                <td>12,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <script>
+          function toggleMIUTuition() {
+            const section = document.getElementById('miu-tuition-section');
+            const button = document.querySelector('.ecu-tuition-toggle-btn');
+            if (section.style.display === 'none' || section.style.display === '') {
+              section.style.display = 'block';
+              button.textContent = 'Hide Tuition Fees';
+            } else {
+              section.style.display = 'none';
+              button.textContent = 'Show Tuition Fees';
+            }
+          }
+        </script>
+    
+        <div class="buttons">
+          <a href="https://maps.app.goo.gl/6pnoWw6XA3iAHEZSA" target="_blank">View Location</a>
+          <a href="https://www.miuegypt.edu.eg/" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+    
+
+     <!-- MUST -->
+    
+    <div class="university-container" data-city="6th of October City" 
+    data-type="Private" 
+    data-faculties="Faculty of Medicine, Faculty of Dental Surgery, Faculty of Pharmaceutical Sciences & Drug Manufacturing, Faculty of Physical Therapy, Faculty of Biotechnology, Faculty of Applied Health Science Technology, Faculty of Nursing, Faculty of Engineering, Faculty of Mass Media, Faculty of Business Administration, Economics & Information Systems, Faculty of Information Technology & Artificial Intelligence, Faculty of Foreign Languages & Translation, Faculty of Archaeology and Tourist Guidance, Faculty of Special Education">
+        <img src="https://www.koleyat.com/wp-content/uploads/2017/11/Screen-Shot-2017-11-25-at-11.55.10-PM-1208x800.jpg" alt="Misr University for Science and Technology (MUST)" class="university-image">
+        <div class="university-content">
+            <h2>Misr University for Science and Technology (MUST)</h2>
+            <p>Misr University for Science and Technology was established by presidential decree number 245 for 1996. Degrees awarded are accredited by the Supreme Council of Universities. It comprises 14 faculties that follow the credit hours system.</p>
+            <div class="ecu-faq-container" id="must-faq-section">
+              <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+              <ul class="ecu-faq-list">
+                <li><strong>Fees are paid per academic year</strong>, typically divided into two equal installments: one at the beginning of each semester.</li>
+                <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+              </ul>
+        
+              <h4 class="ecu-faq-note-heading">Note</h4>
+              <p class="ecu-faq-note">
+                Freshman students must pay 50% of the annual tuition fees along with the full administrative fee upon acceptance.
+              </p>
+            </div>
+        
+            <button class="ecu-tuition-toggle-btn" onclick="toggleMUSTTuition()">Show Tuition Fees</button>
+            <div class="ecu-tuition-container" id="must-tuition-section" style="display: none;">
+              <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+              <table class="ecu-tuition-table">
+                <thead>
+                  <tr>
+                    <th>Faculty</th>
+                    <th>Total Fees (EGP)</th>
+                    <th>First Semester</th>
+                    <th>Second Semester</th>
+                    <th>Administrative Fees</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Medicine</td>
+                    <td>155,000</td>
+                    <td>77,500</td>
+                    <td>77,500</td>
+                    <td>15,000</td>
+                  </tr>
+                  <tr>
+                    <td>Dental Surgery</td>
+                    <td>145,000</td>
+                    <td>72,500</td>
+                    <td>72,500</td>
+                    <td>14,000</td>
+                  </tr>
+                  <tr>
+                    <td>Pharmaceutical Sciences & Drug Manufacturing</td>
+                    <td>95,000</td>
+                    <td>47,500</td>
+                    <td>47,500</td>
+                    <td>12,000</td>
+                  </tr>
+                  <tr>
+                    <td>Physical Therapy</td>
+                    <td>95,000</td>
+                    <td>47,500</td>
+                    <td>47,500</td>
+                    <td>12,000</td>
+                  </tr>
+                  <tr>
+                    <td>Biotechnology</td>
+                    <td>70,000</td>
+                    <td>35,000</td>
+                    <td>35,000</td>
+                    <td>10,000</td>
+                  </tr>
+                  <tr>
+                    <td>Applied Health Science Technology</td>
+                    <td>50,000</td>
+                    <td>25,000</td>
+                    <td>25,000</td>
+                    <td>8,000</td>
+                  </tr>
+                  <tr>
+                    <td>Nursing</td>
+                    <td>50,000</td>
+                    <td>25,000</td>
+                    <td>25,000</td>
+                    <td>8,000</td>
+                  </tr>
+                  <tr>
+                    <td>Engineering</td>
+                    <td>70,000</td>
+                    <td>35,000</td>
+                    <td>35,000</td>
+                    <td>10,000</td>
+                  </tr>
+                  <tr>
+                    <td>Mass Media (English Section)</td>
+                    <td>55,000</td>
+                    <td>27,500</td>
+                    <td>27,500</td>
+                    <td>9,000</td>
+                  </tr>
+                  <tr>
+                    <td>Business Administration, Economics & Information Systems</td>
+                    <td>55,000</td>
+                    <td>27,500</td>
+                    <td>27,500</td>
+                    <td>9,000</td>
+                  </tr>
+                  <tr>
+                    <td>Information Technology & Artificial Intelligence</td>
+                    <td>75,000</td>
+                    <td>37,500</td>
+                    <td>37,500</td>
+                    <td>10,000</td>
+                  </tr>
+                  <tr>
+                    <td>Foreign Languages & Translation</td>
+                    <td>55,000</td>
+                    <td>27,500</td>
+                    <td>27,500</td>
+                    <td>9,000</td>
+                  </tr>
+                  <tr>
+                    <td>Archaeology and Tourist Guidance</td>
+                    <td>40,000</td>
+                    <td>20,000</td>
+                    <td>20,000</td>
+                    <td>7,000</td>
+                  </tr>
+                  <tr>
+                    <td>Special Education</td>
+                    <td>40,000</td>
+                    <td>20,000</td>
+                    <td>20,000</td>
+                    <td>7,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        
+            <script>
+              function toggleMUSTTuition() {
+                const section = document.getElementById('must-tuition-section');
+                const button = document.querySelector('.ecu-tuition-toggle-btn');
+                if (section.style.display === 'none' || section.style.display === '') {
+                  section.style.display = 'block';
+                  button.textContent = 'Hide Tuition Fees';
+                } else {
+                  section.style.display = 'none';
+                  button.textContent = 'Show Tuition Fees';
+                }
+              }
+            </script>
+        
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/TD3LWa1LzqzGQ3Ss8" target="_blank">View Location</a>
+                <a href="https://must.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+     <!-- UH -->
+    <div class="university-container" data-city="New Administrative Capital" 
+    data-type="Private" 
+    data-faculties="Faculty of Engineering, Faculty of Computer Science, Faculty of Physiotherapy, Faculty of Business, Faculty of Mass Communication, Faculty of Creative Arts, Faculty of Pharmacy (MPharm)">
+        <img src="https://theigclub.com/wp-content/uploads/2023/04/Screen-Shot-2020-08-12-at-5.10.28-PM-1024x668-1.png" alt="Hertfordshire University in Egypt (UH)" class="university-image">
+        <div class="university-content">
+            <h2>Hertfordshire University in Egypt (UH)</h2>
+            <p>The University of Hertfordshire (UH) is one of the top 200 universities under 50 years old in the world.
+
+                The university aims to transform students as learners and professionals, enabling them to play their part in the global economy by means of challenging and innovating business thinking.</p>
+            
+                <div class="ecu-faq-container" id="uh-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid per academic year</strong>, typically divided into two equal installments: one at the beginning of each semester.</li>
+                    <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+                    <li><strong>Late payments</strong> may incur a 5% penalty on the remaining unsettled fees.</li>
+                  </ul>
+            
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                   <li> Tuition fees are subject to an annual increase of up to 15%. Non-academic and lab fees are subject to annual review.</li>
+                    <li>If a pharmaceutical science student transfers to MPharm programme at Level 5, the student must pay the difference of tuition fees between the programmes retrospectively for IFP and Class Level 4.</li>
+                  </p>
+                </div>
+            
+                <button class="ecu-tuition-toggle-btn" onclick="toggleUHTuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="uh-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Category A</th>
+                        <th>Category B</th>
+                        <th>Category C</th>
+                        <th>Standard Fees</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Engineering</td>
+                        <td>285,000 EGP</td>
+                        <td>295,000 EGP</td>
+                        <td>305,000 EGP</td>
+                        <td>335,000 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>285,000 EGP</td>
+                        <td>295,000 EGP</td>
+                        <td>305,000 EGP</td>
+                        <td>335,000 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Physiotherapy</td>
+                        <td>290,000 EGP</td>
+                        <td>300,000 EGP</td>
+                        <td>310,000 EGP</td>
+                        <td>340,000 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Business</td>
+                        <td>250,000 EGP</td>
+                        <td>260,000 EGP</td>
+                        <td>270,000 EGP</td>
+                        <td>300,000 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Mass Communication</td>
+                        <td>250,000 EGP</td>
+                        <td>260,000 EGP</td>
+                        <td>270,000 EGP</td>
+                        <td>300,000 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Creative Arts</td>
+                        <td>280,000 EGP</td>
+                        <td>290,000 EGP</td>
+                        <td>300,000 EGP</td>
+                        <td>330,000 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>MPharm</td>
+                        <td>290,000 EGP</td>
+                        <td>300,000 EGP</td>
+                        <td>310,000 EGP</td>
+                        <td>340,000 EGP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Note:</strong> Tuition fees can be paid over two installments. Fees are subject to an annual increase of up to 15%. Non-academic fees and lab fees are subject to annual review.
+                  </p>
+                </div>
+            
+                <script>
+                  function toggleUHTuition() {
+                    const section = document.getElementById('uh-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+                <div class="buttons">
+                <a href="https://maps.app.goo.gl/hYi3AZ14D7yZwGbn6" target="_blank">View Location</a>
+                <a href="https://www.gaf.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- MSA -->
+    
+    <div class="university-container" data-city="Giza" 
+    data-type="Private" 
+    data-faculties="Faculty of Dentistry, Faculty of Pharmacy, Faculty of Engineering, Faculty of Computer Science, Faculty of Biotechnology, Faculty of Mass Communication, Faculty of Management Sciences, Faculty of Arts and Design, Faculty of Languages, Faculty of Physiotherapy">
+        <img src="https://www.koleyat.com/wp-content/uploads/2017/11/Screen-Shot-2017-12-02-at-11.46.41-PM.jpg" alt="Modern Sciences and Arts University (MSA)" class="university-image">
+        <div class="university-content">
+            <h2>Modern Sciences and Arts University (MSA)</h2>
+            <p>October University for Modern Sciences and Arts , known simple as MSA University, is a prominent private university located in Giza, Egypt.
+                 It was founded in 1999 by Dr. Nawal El-Degwi, a pioneer of the Egyptian private education. The university is accredited by the Egyptian and British ministry of education and a graduate student can study in Britain without any equivalence.</p>
+            
+                 <div class="ecu-faq-container" id="msa-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid per academic year</strong>, typically divided into two equal installments: one at the beginning of each semester.</li>
+                    <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+                    <li><strong>Late payments</strong> may incur a penalty on the remaining unsettled fees.</li>
+                  </ul>
+            
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Tuition fees are subject to an annual increase. Non-academic and lab fees are subject to annual review.
+                  </p>
+                </div>
+            
+                <button class="ecu-tuition-toggle-btn" onclick="toggleMSATuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="msa-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Tuition Fees (EGP/year)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Dentistry</td>
+                        <td>170,000</td>
+                      </tr>
+                      <tr>
+                        <td>Pharmacy</td>
+                        <td>150,000</td>
+                      </tr>
+                      <tr>
+                        <td>Engineering</td>
+                        <td>130,000</td>
+                      </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>120,000</td>
+                      </tr>
+                      <tr>
+                        <td>Biotechnology</td>
+                        <td>110,000</td>
+                      </tr>
+                      <tr>
+                        <td>Mass Communication</td>
+                        <td>100,000</td>
+                      </tr>
+                      <tr>
+                        <td>Management Sciences</td>
+                        <td>95,000</td>
+                      </tr>
+                      <tr>
+                        <td>Arts and Design</td>
+                        <td>90,000</td>
+                      </tr>
+                      <tr>
+                        <td>Languages</td>
+                        <td>85,000</td>
+                      </tr>
+                      <tr>
+                        <td>Physiotherapy</td>
+                        <td>105,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Note:</strong> Tuition fees can be paid over two installments. Fees are subject to an annual increase. Non-academic fees and lab fees are subject to annual review.
+                  </p>
+                </div>
+            
+                <script>
+                  function toggleMSATuition() {
+                    const section = document.getElementById('msa-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+              <div class="buttons">
+                <a href="https://maps.app.goo.gl/SbZ1DRfNqLZ5GnZQ6" target="_blank">View Location</a>
+                <a href="https://msa.edu.eg/msauniversity/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+     <!-- NU -->
+    <div class="university-container" data-city="Beni Suef" 
+    data-type="Private" 
+    data-faculties="Faculty of Medicine, Faculty of Oral and Dental Medicine, Faculty of Pharmacy, Faculty of Engineering, Faculty of Computer Science, Faculty of Business Administration, Faculty of Mass Communication, Faculty of Physical Therapy, Faculty of Fine Arts">
+        <img src="https://www.nub.edu.eg/wp-content/uploads/2021/02/NUB_016_Edit-1.jpg" alt="Nahda University" class="university-image">
+        <div class="university-content">
+            <h2>Nahda University</h2>
+            <p>Nahda University in Beni Suef (NUB) is located in Upper Egypt. It was established in 2006. It is a private university run by the Thebes Education Group.</p>
+            <div class="ecu-faq-container" id="nub-faq-section">
+              <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+              <ul class="ecu-faq-list">
+                <li><strong>Fees are paid per academic year</strong>, typically divided into two equal installments: one at the beginning of each semester.</li>
+                <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+                <li><strong>Late payments</strong> may incur a penalty on the remaining unsettled fees.</li>
+              </ul>
+        
+              <h4 class="ecu-faq-note-heading">Note</h4>
+              <p class="ecu-faq-note">
+                Tuition fees are subject to an annual increase. Non-academic and lab fees are subject to annual review.
+              </p>
+            </div>
+        
+            <button class="ecu-tuition-toggle-btn" onclick="toggleNUBTuition()">Show Tuition Fees</button>
+            <div class="ecu-tuition-container" id="nub-tuition-section" style="display: none;">
+              <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+              <table class="ecu-tuition-table">
+                <thead>
+                  <tr>
+                    <th>Faculty</th>
+                    <th>Tuition Fees (EGP/year)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Medicine</td>
+                    <td>250,000</td>
+                  </tr>
+                  <tr>
+                    <td>Oral and Dental Medicine</td>
+                    <td>200,000</td>
+                  </tr>
+                  <tr>
+                    <td>Pharmacy</td>
+                    <td>180,000</td>
+                  </tr>
+                  <tr>
+                    <td>Engineering</td>
+                    <td>150,000</td>
+                  </tr>
+                  <tr>
+                    <td>Computer Science</td>
+                    <td>130,000</td>
+                  </tr>
+                  <tr>
+                    <td>Business Administration</td>
+                    <td>120,000</td>
+                  </tr>
+                  <tr>
+                    <td>Mass Communication</td>
+                    <td>110,000</td>
+                  </tr>
+                  <tr>
+                    <td>Physical Therapy</td>
+                    <td>140,000</td>
+                  </tr>
+                  <tr>
+                    <td>Fine Arts</td>
+                    <td>100,000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="ecu-faq-note">
+                <strong>Note:</strong> Tuition fees can be paid over two installments. Fees are subject to an annual increase. Non-academic fees and lab fees are subject to annual review.
+              </p>
+            </div>
+        
+            <script>
+              function toggleNUBTuition() {
+                const section = document.getElementById('nub-tuition-section');
+                const button = document.querySelector('.ecu-tuition-toggle-btn');
+                if (section.style.display === 'none' || section.style.display === '') {
+                  section.style.display = 'block';
+                  button.textContent = 'Hide Tuition Fees';
+                } else {
+                  section.style.display = 'none';
+                  button.textContent = 'Show Tuition Fees';
+                }
+              }
+            </script>
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/NG3byKBrzKwPgxkX7" target="_blank">View Location</a>
+                <a href="https://www.nub.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- O6U -->
+    <div class="university-container" data-city="6th of October City" 
+    data-type="Private"  
+    data-faculties="Faculty of Medicine, Faculty of Oral and Dental Medicine, Faculty of Pharmacy, Faculty of Physical Therapy, Faculty of Applied Health Technology, Faculty of Nursing, Faculty of Specialized Nursing, Faculty of Engineering, Faculty of Computer Science and Information Systems, Faculty of Applied Arts, Faculty of Arabic Language, Faculty of Economics, Faculty of English Department, Faculty of English & Translation, Other Language Departments, Faculty of Media and Communication Arts, Faculty of Education, Faculty of Tourism & Hotels">
+        <img src="https://o6u.edu.eg/images/SliderGallery/8102016114849am474.jpg" alt="October 6 University (O6U)" class="university-image">
+        <div class="university-content">
+            <h2>October 6 University (O6U)</h2>
+            <p>October 6 University (O6U) is a private university located in Giza, 6th of October City, Egypt. It was established by the Republican Decree no. 243 in 1996.
+
+                O6U is in the 6th of October City, 32 km from downtown Cairo. The campus consists of four education buildings, the teaching hospital, and the hostel for female students, while the central library and male students hostel are 150 meters from the campus.
+                
+                All the awarded degrees are accredited and validated by the Egyptian Supreme Council of Universities.</p>
+                <div class="ecu-faq-container" id="o6u-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid per academic year</strong>, typically divided into two installments: one at the beginning of each semester.</li>
+                    <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+                    <li><strong>Late payments</strong> may incur a penalty on the remaining unsettled fees.</li>
+                  </ul>
+                
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Tuition fees are subject to an annual increase. Non-academic and lab fees are subject to annual review.
+                  </p>
+                </div>
+                
+                <button class="ecu-tuition-toggle-btn" onclick="toggleO6UTuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="o6u-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Tuition Fees (EGP/year)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Medicine</td><td>140,000</td></tr>
+                      <tr><td>Oral and Dental Medicine</td><td>110,000</td></tr>
+                      <tr><td>Pharmacy (Pharm D)</td><td>90,000</td></tr>
+                      <tr><td>Pharm D Clinical Pharmacy</td><td>100,000</td></tr>
+                      <tr><td>Physical Therapy</td><td>75,000</td></tr>
+                      <tr><td>Applied Health Technology</td><td>42,000</td></tr>
+                      <tr><td>Nursing</td><td>30,000</td></tr>
+                      <tr><td>Specialized Nursing</td><td>35,000</td></tr>
+                      <tr><td>Engineering</td><td>55,000</td></tr>
+                      <tr><td>Computer Science and Information Systems</td><td>40,000</td></tr>
+                      <tr><td>Applied Arts</td><td>44,000</td></tr>
+                      <tr><td>Arabic Language Department</td><td>33,000</td></tr>
+                      <tr><td>Economics (IMC program with Linnaeus University)</td><td>44,000</td></tr>
+                      <tr><td>English Department</td><td>50,000</td></tr>
+                      <tr><td>English & Translation</td><td>35,000</td></tr>
+                      <tr><td>Other Language Departments</td><td>30,000</td></tr>
+                      <tr><td>Media and Communication Arts</td><td>38,500</td></tr>
+                      <tr><td>Education (Children Math - Private Education - Science)</td><td>25,000</td></tr>
+                      <tr><td>Education (Arabic - English - Computer Science - Math)</td><td>30,000</td></tr>
+                      <tr><td>Tourism & Hotels</td><td>25,000</td></tr>
+                      <tr><td>Tourism & Hotels (IMC program with Linnaeus University)</td><td>35,000</td></tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Note:</strong> Tuition fees can be paid over two installments. Fees are subject to an annual increase. Non-academic fees and lab fees are subject to annual review.
+                  </p>
+                </div>
+                
+                <script>
+                  function toggleO6UTuition() {
+                    const section = document.getElementById('o6u-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+                
+                <div class="buttons">
+                <a href="https://maps.app.goo.gl/aFHiPtX2ULPX69L5A" target="_blank">View Location</a>
+                <a href="https://o6u.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+     <!-- PUA -->
+    <div class="university-container" data-city="Alexandria" 
+    data-type="Private" 
+    data-faculties="Faculty of Dentistry, Faculty of Clinical Pharmacy, Faculty of Engineering, Faculty of Financial and Administrative Sciences, Faculty of Languages and Translation, Faculty of Legal Studies and International Transactions">
+        <img src="https://www.pua.edu.eg/wp-content/uploads/2018/11/Website-Edited.jpg" alt="Pharos University in Alexandria (PUA)" class="university-image">
+        <div class="university-content">
+            <h2>Pharos University in Alexandria (PUA)</h2>
+            <p>Pharos University in Alexandria (PUA) is the first private university in Alexandria, Egypt. The first Egyptian private university, in Alexandria, it is an accredited university whose degrees are equivalent to those from the Supreme Council of 
+                Egyptian Universities and the Ministry of Higher Education. As internationalization is one of PUA’s key strategic goals, PUA has built numerous collaborative links with European, American, 
+                and Asian universities with which it works closely to ensure its students receive a global standard of education.</p>
+            
+
+                <div class="ecu-faq-container" id="pua-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid per academic year</strong>, divided into two installments: one at the beginning of each semester.</li>
+                    <li><strong>Administrative fees</strong> are paid separately at the time of admission and registration.</li>
+                    <li><strong>Late payments</strong> may incur a penalty on the remaining unsettled fees.</li>
+                  </ul>
+                
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Tuition fees are subject to annual review. Administrative and non-academic service fees may apply. Military education charges are applicable for male students.
+                  </p>
+                </div>
+                
+                <button class="ecu-tuition-toggle-btn" onclick="togglePUATuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="pua-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Faculty (Egyptian Students)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Tuition Fees (EGP/year)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Dentistry</td><td>164,000</td></tr>
+                      <tr><td>Clinical Pharmacy</td><td>114,000</td></tr>
+                      <tr><td>Engineering</td><td>82,600</td></tr>
+                      <tr><td>Financial and Administrative Sciences</td><td>76,120</td></tr>
+                      <tr><td>Languages and Translation</td><td>74,690</td></tr>
+                      <tr><td>Legal Studies and International Transactions</td><td>62,000</td></tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Note:</strong> Administrative fees: EGP 8,850. Additional military education fees apply for male students (EGP 170 for stamping + EGP 450 for course).
+                  </p>
+                </div>
+                
+                <script>
+                  function togglePUATuition() {
+                    const section = document.getElementById('pua-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+                
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/AfsnKGYgg9ERks6x6" target="_blank">View Location</a>
+                <a href="https://www.pua.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SU -->
+    <div class="university-container"
+    data-city="Sinai" 
+    data-type="Private" 
+    data-faculties="Faculty of Pharmacy, Faculty of  Dentistry, Faculty of Physical Therapy, Faculty of Engineering, Faculty of Information Technology, Faculty of Business, Faculty of Mass Communication">
+        <img src="https://su.edu.eg/wp-content/uploads/2020/06/22-copy.jpg" alt="Sinai University (SU)" class="university-image">
+        <div class="university-content">
+            <h2>Sinai University (SU)</h2>
+            <p>Sinai University is a private university in Sinai, Egypt. It was established in 2006. Its president is Professor Gehan Fekry Mohamed Abdellatif and the chairman of its board of trustees is the Egyptian businessman Hassan Rateb.
+
+                It is one of two universities located in northern Sinai, along with Arish University.</p>
+            
+
+                <div class="ecu-faq-container" id="su-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid per academic year</strong>, with options for semester-wise installments.</li>
+                    <li><strong>Administrative and registration fees</strong> are paid during admission.</li>
+                    <li><strong>Additional fees</strong> such as student services, gifted student support, and martyr's fund are included in the total.</li>
+                  </ul>
+                
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Tuition fees are subject to change annually. Credit hour fees apply to summer courses only and are not included in the annual fee.
+                    Enrollment fees will be added to the annual fees after acceptance.
+                  </p>
+                </div>
+                
+                <button class="ecu-tuition-toggle-btn" onclick="toggleSUTuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="su-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Faculty (sinai University - Egyptian Students)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Annual Fee (EGP)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Pharmacy</td><td>116,142</td></tr>
+                      <tr><td>Dentistry</td><td>145,245</td></tr>
+                      <tr><td>Physical Therapy</td><td>92,399</td></tr>
+                      <tr><td>Engineering</td><td>68,132</td></tr>
+                      <tr><td>Information Technology</td><td>51,894</td></tr>
+                      <tr><td>Business</td><td>51,652</td></tr>
+                      <tr><td>Mass Communication (English)</td><td>50,441</td></tr>
+                      <tr><td>Mass Communication (Arabic)</td><td>45,162</td></tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Note:</strong> Enrollment fees are added after acceptance. Credit hour fees for summer courses range from EGP 800 to 3,300 depending on the faculty.
+                  </p>
+                </div>
+                
+                <script>
+                  function toggleSUTuition() {
+                    const section = document.getElementById('su-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+                
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/HAy1ohyeZCndHjVn9" target="_blank">View Location</a>
+                <a href="https://su.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+  <!-- UFE -->
+    
+    <div class="university-container"
+    data-city="El Shorouk" 
+    data-type="Private" 
+    data-faculties="Faculty of Engineering & Architecture, Faculty of Management & Business Informatics, Faculty of Applied Languages, Social & Human Sciences">
+
+        <img src="https://theigclub.com/wp-content/uploads/elementor/thumbs/2020-07-08-scaled-pt3ncwx5f9cnz1ao1ne16aoxnu84q1q5dz7co7fp9c.jpg" alt="French University of Egypt (UFE)" class="university-image">
+        <div class="university-content">
+            <h2>French University of Egypt (UFE)</h2>
+            <p>The French University of Egypt is a non-profit private university, established in 2002 at Cairo in El-Sherouk city.
+                 It is composed of three faculties: Business, Engineering, and Applied Languages. Each faculty is composed of different departments. All the diplomas offered by the university are in coordination with prestigious French universities like Paris III:
+                 Sorbonne University, the Nantes University, Haute Alsace (Mulhouse-Colmar) University and the Corse University. </p>
+            
+                 <div class="ecu-faq-container" id="ufe-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid annually</strong> and are frozen until graduation, provided the student passes each academic year.</li>
+                    <li><strong>Admin fees</strong> and <strong>insurance</strong> are added to the tuition in the first year.</li>
+                    <li><strong>Partner university fees</strong> are updated separately and announced in June 2025.</li>
+                  </ul>
+                
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Foreign students treated as Egyptians pay in EGP. Syrian, Palestinian, and Sudanese students are considered Egyptians for fee purposes. Tuition may be paid in EGP, Euro, or USD depending on the student status and residency.
+                  </p>
+                </div>
+                
+                <button class="ecu-tuition-toggle-btn" onclick="toggleUFETuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="ufe-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Faculty (French University in Egypt - 2025/2026)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Faculty</th>
+                        <th>Egyptians (EGP)</th>
+                        <th>Foreigners (€)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Engineering & Architecture</td>
+                        <td>175,000</td>
+                        <td>4,600</td>
+                      </tr>
+                      <tr>
+                        <td>Management & Business Informatics</td>
+                        <td>156,000</td>
+                        <td>4,200</td>
+                      </tr>
+                      <tr>
+                        <td>Applied Languages, Social & Human Sciences</td>
+                        <td>126,000</td>
+                        <td>3,300</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Additional Fees (First Year Only):</strong><br>
+                    • Admin Fees: 8,000 EGP<br>
+                    • Insurance (refundable upon graduation): 5,500 EGP
+                  </p>
+                </div>
+                
+                <script>
+                  function toggleUFETuition() {
+                    const section = document.getElementById('ufe-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+                
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/6sBWBY7jJYZ9J6a76" target="_blank">View Location</a>
+                <a href="https://ufe.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+      <!-- BUC -->
+      <div class="university-container" 
+      data-city="Cairo" 
+      data-type="Private" 
+      data-faculties="Faculty of Medicine, Faculty of Oral and Dental Medicine, Faculty of Pharm D Clinical, Faculty of Pharm D, Faculty of Physical Therapy, Faculty of Veterinary Medicine, Faculty of Biotechnology, Faculty of Allied Health Sciences, Faculty of Nursing, Faculty of Engineering and Technology, Faculty of Applied Arts, Faculty of Law, Faculty of Business and Economics, Faculty of Languages and Translation, Faculty of Film Making and Performing Arts, Faculty of Political Sciences, Faculty of Humanities & Social Sciences - Media, Faculty of Humanities & Social Sciences ">
+ 
+        <img src="https://m.gomhuriaonline.com/Upload/News/21-8-2022_17_56_35_GomhuriaOnline_121661097395.jpg" alt="Badr University in Cairo (BUC)" class="university-image">
+        <div class="university-content">
+            <h2>Badr University in Cairo (BUC)</h2>
+            <p>BUC is a premier student-centered learning hub providing a 
+                high-quality education with advanced research capabilities and demonstrating a strong commitment to serving the global community.</p>
+            
+                <div class="ecu-faq-container" id="buc-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Tuition fees are paid annually</strong>, with the option to pay in installments depending on university policy.</li>
+                    <li><strong>Fees differ</strong> for Egyptian and non-Egyptian students.</li>
+                    <li>Additional fees (registration, administrative, lab fees, etc.) may apply separately and are not included in tuition.</li>
+                  </ul>
+                
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Fees are subject to change. Please consult the admissions office for the most updated payment schedule and policies.
+                  </p>
+                </div>
+                
+                <button class="ecu-tuition-toggle-btn" onclick="toggleBUCTuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="buc-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by School (Badr University - BUC)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Egyptians (EGP)</th>
+                        <th>Non-Egyptians (USD)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Medicine</td><td>199,000</td><td>16,600</td></tr>
+                      <tr><td>Oral and Dental Medicine</td><td>145,000</td><td>12,100</td></tr>
+                      <tr><td>Pharm D Clinical</td><td>98,000</td><td>8,200</td></tr>
+                      <tr><td>Pharm D</td><td>92,000</td><td>7,700</td></tr>
+                      <tr><td>Physical Therapy</td><td>89,000</td><td>7,400</td></tr>
+                      <tr><td>Veterinary Medicine</td><td>90,000</td><td>7,000</td></tr>
+                      <tr><td>Biotechnology</td><td>65,000</td><td>5,400</td></tr>
+                      <tr><td>Allied Health Sciences</td><td>65,000</td><td>5,400</td></tr>
+                      <tr><td>Nursing</td><td>43,000</td><td>3,600</td></tr>
+                      <tr><td>Engineering and Technology</td><td>70,000</td><td>5,850</td></tr>
+                      <tr><td>Applied Arts</td><td>65,000</td><td>5,400</td></tr>
+                      <tr><td>Law</td><td>65,000</td><td>5,400</td></tr>
+                      <tr><td>Business and Economics</td><td>60,000</td><td>5,000</td></tr>
+                      <tr><td>Languages and Translation</td><td>55,000</td><td>4,600</td></tr>
+                      <tr><td>Film Making and Performing Arts</td><td>80,000</td><td>6,700</td></tr>
+                      <tr><td>School of Political Sciences</td><td>55,000</td><td>4,600</td></tr>
+                      <tr><td>Humanities & Social Sciences - Media</td><td>55,000</td><td>4,600</td></tr>
+                      <tr><td>Humanities & Social Sciences - Psychology</td><td>50,000</td><td>4,150</td></tr>
+                      <tr><td>Humanities & Social Sciences - Others</td><td>43,000</td><td>3,600</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <script>
+                  function toggleBUCTuition() {
+                    const section = document.getElementById('buc-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+ 
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/dLJZXv8Ue8VssNnF7" target="_blank">View Location</a>
+                <a href="https://buc.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+      <!-- NGU -->
+    
+      <div class="university-container" 
+      data-city="6th of October" 
+      data-type="Private" 
+      data-faculties="Faculty of Medicine, Faculty of Dentistry, Faculty of Pharmacy">
+ 
+        <img src="https://static.where-e.com/Egypt/Giza_Governorate/First_6th_Of_October/New-Giza-University_f659a45bc5beaf953e943a1d10038852.jpg" alt="New Giza University (NGU)" class="university-image">
+        <div class="university-content">
+            <h2>New Giza University (NGU)</h2>
+            <p>Newgiza University (NGU) is a private university situated in 6th of October, Egypt. The university welcomed its first class of students in 2016. NGU has academic collaborations with University College London,King's College London, and the Milano Fashion Institute.</p>
+
+            <div class="ecu-faq-container" id="ngu-faq-section">
+              <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+              <ul class="ecu-faq-list">
+                <li><strong>Tuition is paid in 3 installments</strong> throughout the academic year.</li>
+                <li>Fees are in both <strong>EGP and USD</strong> for Egyptian students (USD likely covers services or international components).</li>
+                <li>Each installment has specific percentage-based values (40% + 30% + 30%).</li>
+              </ul>
+            
+              <h4 class="ecu-faq-note-heading">Note</h4>
+              <p class="ecu-faq-note">
+                Fees listed apply to Egyptian students for the 2024/2025 academic year. Subject to change in future years.
+              </p>
+            </div>
+            
+            <button class="ecu-tuition-toggle-btn" onclick="toggleNGUTuition()">Show Tuition Fees</button>
+            <div class="ecu-tuition-container" id="ngu-tuition-section" style="display: none;">
+              <h3 class="ecu-tuition-title">Medical Schools Tuition (New Giza University - NGU) for Egyptians – AY 2024/2025</h3>
+              <table class="ecu-tuition-table">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Major</th>
+                    <th colspan="2">Total</th>
+                    <th colspan="2">1st Installment (40%)</th>
+                    <th colspan="2">2nd Installment (30%)</th>
+                    <th colspan="2">3rd Installment (30%)</th>
+                  </tr>
+                  <tr>
+                    <th>EGP</th>
+                    <th>USD</th>
+                    <th>EGP</th>
+                    <th>USD</th>
+                    <th>EGP</th>
+                    <th>USD</th>
+                    <th>EGP</th>
+                    <th>USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Medicine</td>
+                    <td>252,000</td><td>1,000</td>
+                    <td>100,800</td><td>400</td>
+                    <td>75,600</td><td>300</td>
+                    <td>75,600</td><td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Dentistry</td>
+                    <td>234,000</td><td>1,000</td>
+                    <td>93,600</td><td>400</td>
+                    <td>70,200</td><td>300</td>
+                    <td>70,200</td><td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Pharmacy</td>
+                    <td>148,300</td><td>500</td>
+                    <td>59,320</td><td>250</td>
+                    <td>44,490</td><td>250</td>
+                    <td>44,490</td><td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <script>
+              function toggleNGUTuition() {
+                const section = document.getElementById('ngu-tuition-section');
+                const button = document.querySelector('.ecu-tuition-toggle-btn');
+                if (section.style.display === 'none' || section.style.display === '') {
+                  section.style.display = 'block';
+                  button.textContent = 'Hide Tuition Fees';
+                } else {
+                  section.style.display = 'none';
+                  button.textContent = 'Show Tuition Fees';
+                }
+              }
+            </script>
+            
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/1ePXn8EuUmevY3HK7" target="_blank">View Location</a>
+                <a href="https://ngu.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    
+      <!-- SHA -->
+      <div class="university-container" 
+      data-city="El Shorouk" 
+      data-type="Private" 
+      data-faculties="Faculty of Computer Science, Faculty of Management Information Systems, Faculty of Business Administration & Accounting">
+ 
+        <img src="https://sha.edu.eg/layout/images/home.JPG" alt="El Shorouk Academy (SHA)" class="university-image">
+        <div class="university-content">
+            <h2>El Shorouk Academy (SHA)</h2>
+            <p>l Shorouk Academy is a private Egyptian educational academy, officially licensed by the Ministry of Higher Education and Scientific Research, and offering programs in Architecture, Engineering, 
+                Mass communication, Media, Computer science, Accounting, Management Information Systems and Business administration, it is located in El Shorouk, Cairo, Egypt and has been operating since 1995.</p>
+
+                <div class="ecu-faq-container" id="sha-faq-section">
+                  <h3 class="ecu-faq-title">How are tuition fees paid?</h3>
+                  <ul class="ecu-faq-list">
+                    <li><strong>Fees are paid annually</strong>, with the possibility of installment payments based on the academy's policy.</li>
+                    <li><strong>Tuition varies</strong> depending on the department and study track.</li>
+                    <li>Additional charges may apply (e.g., registration, administrative, lab fees).</li>
+                  </ul>
+                
+                  <h4 class="ecu-faq-note-heading">Note</h4>
+                  <p class="ecu-faq-note">
+                    Tuition fees are subject to change. Please consult the admission office or official website for the latest updates.
+                  </p>
+                </div>
+                
+                <button class="ecu-tuition-toggle-btn" onclick="toggleSHATuition()">Show Tuition Fees</button>
+                <div class="ecu-tuition-container" id="sha-tuition-section" style="display: none;">
+                  <h3 class="ecu-tuition-title">Tuition Fees by Department (El Shorouk Academy)</h3>
+                  <table class="ecu-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Department</th>
+                        <th>Tuition (EGP)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>17,523 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Management Information Systems</td>
+                        <td>16,523 EGP</td>
+                      </tr>
+                      <tr>
+                        <td>Business Administration & Accounting</td>
+                        <td>15,822 EGP</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="ecu-faq-note">
+                    <strong>Note:</strong> These fees are approximate and may vary. For accurate and up-to-date information, please refer to the official website or contact the student affairs office.
+                  </p>
+                </div>
+                
+                <script>
+                  function toggleSHATuition() {
+                    const section = document.getElementById('sha-tuition-section');
+                    const button = document.querySelector('.ecu-tuition-toggle-btn');
+                    if (section.style.display === 'none' || section.style.display === '') {
+                      section.style.display = 'block';
+                      button.textContent = 'Hide Tuition Fees';
+                    } else {
+                      section.style.display = 'none';
+                      button.textContent = 'Show Tuition Fees';
+                    }
+                  }
+                </script>
+                
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/EV8QcbrGvj8MQXRDA" target="_blank">View Location</a>
+                <a href="https://sha.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>

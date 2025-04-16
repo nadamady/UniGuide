@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniGuide - Find Your Ideal University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="UniGuide Logo">
+        </div>
+        <div class="search-container">
+            <img src="images/search.png" alt="Search Icon" class="search-icon">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="nav-links">
+            <a href="pages/Home.html" class="active">Home</a>
+            <a href="private.html">Private</a>
+            <a href="National.html">National</a>
+            <a href="State-Funded.html">State-Funded</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-image">
+            <img src="https://boostedu.in/wp-content/uploads/2024/10/3-1.png" alt="Student">
+        </div>
+        <div class="hero-content">
+            <h1>Find The Ideal University For You!</h1>
+            <div class="filters">
+                <select id="location-dropdown">
+                    <option value="">Select a City</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="alexandria">Alexandria</option>
+                    <option value="giza">Giza</option>
+                    <option value="sharm-el-sheikh">Sharm El-Sheikh</option>
+                    <option value="hurghada">Hurghada</option>
+                    <option value="luxor">Luxor</option>
+                    <option value="aswan">Aswan</option>
+                    <option value="port-said">Port Said</option>
+                    <option value="suez">Suez</option>
+                    <option value="ismailia">Ismailia</option>
+                    <option value="mansoura">Mansoura</option>
+                    <option value="zagazig">Zagazig</option>
+                    <option value="fayoum">Fayoum</option>
+                    <option value="sohag">Sohag</option>
+                    <option value="assiut">Assiut</option>
+                    <option value="banha">Banha</option>
+                    <option value="damietta">Damietta</option>
+                    <option value="tanta">Tanta</option>
+                    <option value="beni-suef">Beni Suef</option>
+                    <option value="minya">Minya</option>
+                    <option value="qena">Qena</option>
+                    <option value="new-valley">New Valley</option>
+                </select>
+                <select id="university-type-dropdown">
+                    <option value="">Select University Type</option>
+                    <option value="private">Private</option>
+                    <option value="national">National</option>
+                    <option value="state-funded">State-Funded</option>
+                </select>
+                <select id="major-dropdown">
+                    <option value="">Select a Faculty</option>
+                    <option value="medicine">Faculty of Medicine</option>
+                    <option value="dentistry">Faculty of Dentistry</option>
+                    <option value="pharmacy">Faculty of Pharmacy</option>
+                    <option value="physiotherapy">Faculty of Physical Therapy</option>
+                    <option value="nursing">Faculty of Nursing</option>
+                    <option value="engineering">Faculty of Engineering</option>
+                    <option value="computer-science">Faculty of Computer Science</option>
+                    <option value="ai">Faculty of Artificial Intelligence</option>
+                    <option value="law">Faculty of Law</option>
+                    <option value="commerce">Faculty of Commerce</option>
+                    <option value="economics">Faculty of Economics & Political Science</option>
+                    <option value="arts">Faculty of Arts</option>
+                    <option value="education">Faculty of Education</option>
+                    <option value="science">Faculty of Science</option>
+                    <option value="agriculture">Faculty of Agriculture</option>
+                    <option value="media">Faculty of Mass Communication</option>
+                    <option value="tourism">Faculty of Tourism & Hotels</option>
+                    <option value="fine-arts">Faculty of Fine Arts</option>
+                    <option value="applied-arts">Faculty of Applied Arts</option>
+                    <option value="architecture">Faculty of Architecture</option>
+                    <option value="veterinary">Faculty of Veterinary Medicine</option>
+                    <option value="languages">Faculty of Languages (Al-Alsun)</option>
+                    <option value="social-work">Faculty of Social Work</option>
+                    <option value="sports-science">Faculty of Sports Science</option>
+                    <option value="specific-education">Faculty of Specific Education</option>
+                    <option value="fisheries">Faculty of Fisheries & Aquatic Sciences</option>
+                    <option value="energy-engineering">Faculty of Energy & Environmental Engineering</option>
+                    <option value="biotechnology">Faculty of Biotechnology</option>
+                    <option value="marine-sciences">Faculty of Marine Sciences</option>
+                </select>
+            </div>
+            <button class="search-button" id="search-button">Search</button>
+            <script>
+                document.getElementById('search-button').addEventListener('click', function() {
+                    filterUniversities();
+                });
+            
+                function filterUniversities() {
+                    // Get selected values
+                    const city = document.getElementById('location-dropdown').value;
+                    const type = document.getElementById('university-type-dropdown').value;
+                    const faculty = document.getElementById('major-dropdown').value;
+            
+                    // Get all universities
+                    const universities = document.querySelectorAll('.university-container');
+            
+                    universities.forEach(university => {
+                        // Get data attributes from the university container
+                        const universityCity = university.getAttribute('data-city');
+                        const universityType = university.getAttribute('data-type');
+                        const universityFaculties = university.getAttribute('data-faculties').split(',');
+            
+                        // Check if the university matches the selected filters
+                        if ((city === 'Cairo' || city === universityCity) &&
+                            (type === 'Private' || type === universityType) &&
+                            (faculty === '' || universityFaculties.includes(faculty))) {
+                            university.style.display = 'block'; // Show matching university
+                        } else {
+                            university.style.display = 'none'; // Hide non-matching university
+                        }
+                    });
+                }
+            </script>
+
+ 
+            
+        </div>
+    </header>
+
+    <section class="features-section">
+        <img src="images/top.png" class="wave wave-top"> 
+        <div class="top-banner1">Guiding your future because</div>
+        <div class="top-banner2"> your dream matters </div>
+        <img src="images/line.png" class="line">
+        <div class="content-wrapper">
+            <p class="description">We give you all of the data and insights in one place
+                <br> to make your search as easy as possible.</p>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://img.icons8.com/color/96/marker.png" alt="Location">
+                    <h3>LOCATION</h3>
+                    <p>Find the Perfect University Near You – Instantly!</p>
+                </div>
+                <div class="feature">
+                    <img src="https://img.icons8.com/color/96/money.png" alt="Price">
+                    <h3>PRICE</h3>
+                    <p>Discover top colleges that fit your budget!</p>
+                </div>
+                <div class="feature">
+                    <img src="https://img.icons8.com/color/96/student-male.png" alt="Major">
+                    <h3>MAJOR</h3>
+                    <p>You can make the right choice for your future career with us!</p>
+                </div>
+            </div>
+        </div>
+        <img src="images/bottom.png" class="wave wave-bottem"> 
+    </section>
+    <section class="recommended-section">
+        <h2>✔ RECOMMENDED UNIVERSITIES FOR YOU</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left" onclick="prevUniversity()">&#60;</button>
+            <div class="university-card" id="university-card">
+                <img id="university-img" src="https://www.bestuniversitiesegypt.com/ImageHandler.ashx?Id=13196&SS=103459f4a489f3db55f5c1d0f33a225b" alt="Ain Shams University">
+                <div class="university-details">
+                    <h3 id="university-name">Ain-Shams University (ASU)</h3>
+                    <p id="university-description">Ain Shams University is considered among the universities that are present in all international classifications, 
+                      which makes it one of the best 3% of the world’s universities.</p>
+                    <div class="buttons">
+                        <a id="university-website" href="#">Visit Website</a>
+                        <a id="university-info" href="#">More Information</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow right" onclick="nextUniversity()">&#62;</button>
+        </div>
+    </section>
+    
+    <script>
+        const universities = [
+            {
+                name: "Ain-Shams University (ASU)",
+                img: "https://scenenow.com/Content/Admin/Uploads/Articles/ArticlesMainPhoto/42796/36a16404-69c2-4ebd-b4ad-80245e29027d.jpg",
+                description: "Ain Shams University is considered among the universities that are present in all international classifications, making it one of the best 3% of the world’s universities.",
+                website: "https://www.asu.edu.eg/ar",
+                info: "https://en.wikipedia.org/wiki/Ain_Shams_University"
+            },
+            {
+                name: "Cairo University (CU)",
+                img: "https://english.ahram.org.eg/Media/News/2022/12/18/41_2022-638069760115348987-534.jpg",
+                description: "Cairo University is one of the top public universities in Egypt, offering a variety of faculties and world-class research facilities.",
+                website: "https://cu.edu.eg/Home",
+                info: "https://en.wikipedia.org/wiki/Cairo_University"
+            },
+            {
+                name: "Al-Azhar University",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6iVPRzPD7--YtvFWWhB3gt-BeBKmEV5k-w&s",
+                description: "Al-Azhar University is Egypt's oldest degree-granting university and is known as one of the most prestigious universities for Islamic learning.",
+                website: "https://www.universitiesegypt.com/faculties.aspx?EId=51&WID=55",
+                info: "https://en.wikipedia.org/wiki/Al-Azhar_University"
+            },
+            {
+                name: "Mansoura University",
+                img: "https://vetfac.mans.edu.eg/images/news/2023/mans.jpg",
+                description: "Mansoura University was founded in 1972 in Mansoura city, Egypt. It is in the middle of the Nile Delta.  It is one of the biggest Egyptian universities and has contributed much to the cultural and scientific life in Mansoura and Egypt.",
+                website: "https://www.mans.edu.eg/en",
+                info: "https://en.wikipedia.org/wiki/Mansoura_University"
+            }
+            ];
+    
+        let currentIndex = 0;
+    
+        function updateUniversityCard() {
+            document.getElementById("university-name").textContent = universities[currentIndex].name;
+            document.getElementById("university-img").src = universities[currentIndex].img;
+            document.getElementById("university-description").textContent = universities[currentIndex].description;
+            document.getElementById("university-website").href = universities[currentIndex].website;
+            document.getElementById("university-info").href = universities[currentIndex].info;
+        }
+    
+        function nextUniversity() {
+            currentIndex = (currentIndex + 1) % universities.length;
+            updateUniversityCard();
+        }
+    
+        function prevUniversity() {
+            currentIndex = (currentIndex - 1 + universities.length) % universities.length;
+            updateUniversityCard();
+        }
+    </script>
+     <footer>
+        <p>&copy; 2025 UniGuide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
